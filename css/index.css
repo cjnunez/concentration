@@ -45,7 +45,16 @@ body {
   list-style: none;
   border-radius: 5px;
   box-shadow: 0 0 10px 5px rgba(95, 95, 95, 0.3);
+  cursor: pointer;
+}
 
+.card.open {
+  transform: rotateY(0);
+  animation-name: flipY;
+  -webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+  animation-duration: .75s;
+  cursor: default;
 }
 
 i.fas,
