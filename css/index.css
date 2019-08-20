@@ -62,7 +62,7 @@ body {
 	font-size: 15px;
 }
 
-.card.match {
+.card.matched {
 	cursor: default;
 	background: #E5F720;
 	font-size: 33px;

@@ -24,7 +24,7 @@ function matchedCards() {
   openedCards = [];
 }
 
-function notMatched() {
+function unmatched() {
   openedCards[0].classList.add('notMatched');
   openedCards[1].classList.add('notMatched');
   disable();
@@ -33,7 +33,7 @@ function notMatched() {
     openedCards[1].classList.remove('show', 'open', 'no-event', 'unmatched');
     enable();
     openedCards = [];
-  });
+  }, 1000);
 }
 
 function disable() {
@@ -43,11 +43,11 @@ function disable() {
 }
 
 function enable() {
-  Array.prototype.filter.call(cards, function(crd) {
-    crd.classList.remove('disabled');
-    matchedCard.forEach(data => {
-      data.classList.add('disabled');
-    });
+  Array.prototype.filter.call(cards, function(card) {
+    card.classList.remove('disabled');
+    for (let i = 0; i < matchedCard.length; i++) {
+      matchedCard[i].classList.add('disabled');
+    }
   });
 }
 
