@@ -46,6 +46,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px 5px rgba(95, 95, 95, 0.3);
   cursor: pointer;
+  font-size: 0;
 }
 
 .card.open {
@@ -56,6 +57,34 @@ body {
   animation-duration: .75s;
   cursor: default;
 }
+
+.card.show {
+	font-size: 15px;
+}
+
+.card.match {
+	cursor: default;
+	background: #E5F720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+.card.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #e2043b;
+}
+
+.card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
 
 i.fas,
 i.fab {
