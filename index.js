@@ -56,6 +56,44 @@ cards.forEach(data => {
   data.addEventListener('click', openCard);
 });
 
+window.addEventListener('keydown', checkKeyPress, false);
+
+function checkKeyPress(key) {
+  if (key.keyCode == '49') {
+    document.getElementById('c1').click();
+  } else if (key.keyCode == '50') {
+    document.getElementById('c2').click();
+  } else if (key.keyCode == '51') {
+    document.getElementById('c3').click();
+  } else if (key.keyCode == '52') {
+    document.getElementById('c4').click();
+  } else if (key.keyCode == '81') {
+    document.getElementById('c5').click();
+  } else if (key.keyCode == '87') {
+    document.getElementById('c6').click();
+  } else if (key.keyCode == '69') {
+    document.getElementById('c7').click();
+  } else if (key.keyCode == '82') {
+    document.getElementById('c8').click();
+  } else if (key.keyCode == '65') {
+    document.getElementById('c9').click();
+  } else if (key.keyCode == '83') {
+    document.getElementById('c10').click();
+  } else if (key.keyCode == '68') {
+    document.getElementById('c11').click();
+  } else if (key.keyCode == '70') {
+    document.getElementById('c12').click();
+  } else if (key.keyCode == '90') {
+    document.getElementById('c13').click();
+  } else if (key.keyCode == '88') {
+    document.getElementById('c14').click();
+  } else if (key.keyCode == '67') {
+    document.getElementById('c15').click();
+  } else if (key.keyCode == '86') {
+    document.getElementById('c16').click();
+  }
+}
+
 function showCard() {
   this.classList.toggle('open');
   this.classList.toggle('show');
