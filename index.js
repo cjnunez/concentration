@@ -1,9 +1,45 @@
 const card = document.getElementsByClassName('card');
-const cards = [...card];
-const deck = document.getElementsByClassName('deck');
+let cards = [...card];
+const deck = document.getElementById('deck');
 const matchedCard = document.getElementsByClassName('match');
 
 let openedCards = [];
+
+function shuffle(array) {
+  let currentIndex = array.length;
+  let temporaryValue;
+  let randomIndex;
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+document.body.onload = startGame();
+
+function startGame() {
+  // empty the array
+  openedCards = [];
+
+  // shuffle the deck
+  cards = shuffle(cards);
+
+  // remove all existing classes form cards
+  for (let i = 0; i < cards.length; i++) {
+    deck.innerHTML = '';
+    [].forEach.call(cards, function(item) {
+      console.log(item);
+      deck.appendChild(item);
+    });
+    cards[i].classList.remove('show', 'open', 'matched', 'disabled');
+  }
+}
 
 function openCard() {
   openedCards.push(this);
