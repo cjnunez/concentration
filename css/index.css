@@ -47,6 +47,15 @@ body {
   box-shadow: 0 0 10px 5px rgba(95, 95, 95, 0.3);
   cursor: pointer;
   font-size: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .card.open {
@@ -62,17 +71,23 @@ body {
 	font-size: 15px;
 }
 
+.card.show p {
+  font-size: 0px;
+}
+
 .card.matched {
 	cursor: default;
 	background-color: #f7b42c;
-background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
-
-
+  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 	font-size: 15px;
 	animation-name: rubberBand;
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
+}
+
+.card.matched p {
+  font-size: 0px;
 }
 
 .card.unmatched {
@@ -89,12 +104,12 @@ background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
 }
 
 
-i.fas,
+/* i.fas,
 i.fab {
   position: relative;
   top: 30%;
   left: 35%;
-}
+} */
 
 audio {
   display: table;
