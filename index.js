@@ -3,7 +3,7 @@ let cards = [...card];
 const deck = document.getElementById('deck');
 const matchedCard = document.getElementsByClassName('match');
 const winnerModal = document.getElementsByClassName('winner-modal');
-const matchedCardArray = [];
+let matchedCardArray = [];
 
 let openedCards = [];
 
@@ -41,6 +41,7 @@ function startGame() {
     cards[i].classList.remove('show', 'open', 'matched', 'disabled');
   }
 
+  matchedCardArray = [];
   winnerModal[0].classList.remove('show');
 }
 
@@ -98,6 +99,10 @@ function checkWinner() {
     console.log(winnerModal);
     winnerModal[0].classList.add('show');
   }
+}
+
+function closeModal() {
+  winnerModal[0].classList.remove('show');
 }
 
 cards.forEach(data => {
