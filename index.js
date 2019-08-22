@@ -2,6 +2,8 @@ const card = document.getElementsByClassName('card');
 let cards = [...card];
 const deck = document.getElementById('deck');
 const matchedCard = document.getElementsByClassName('match');
+const winnerModal = document.getElementsByClassName('winner-modal');
+const matchedCardArray = [];
 
 let openedCards = [];
 
@@ -34,11 +36,12 @@ function startGame() {
   for (let i = 0; i < cards.length; i++) {
     deck.innerHTML = '';
     [].forEach.call(cards, function(item) {
-      console.log(item);
       deck.appendChild(item);
     });
     cards[i].classList.remove('show', 'open', 'matched', 'disabled');
   }
+
+  winnerModal[0].classList.remove('show');
 }
 
 function openCard() {
@@ -58,6 +61,8 @@ function matchedCards() {
   openedCards[0].classList.remove('show', 'open', 'no-event');
   openedCards[1].classList.remove('show', 'open', 'no-event');
   openedCards = [];
+  matchedCardArray.push('1');
+  matchedCardArray.push('1');
 }
 
 function unmatched() {
@@ -87,46 +92,71 @@ function enable() {
   });
 }
 
+function checkWinner() {
+  console.log(matchedCardArray.length);
+  if (matchedCardArray.length === 16) {
+    console.log(winnerModal);
+    winnerModal[0].classList.add('show');
+  }
+}
+
 cards.forEach(data => {
   data.addEventListener('click', showCard);
   data.addEventListener('click', openCard);
+  data.addEventListener('click', checkWinner);
 });
 
 window.addEventListener('keydown', checkKeyPress, false);
 
 function checkKeyPress(key) {
   if (key.keyCode == '49') {
-    document.getElementById('c1').click();
+    const c1 = document.getElementById('c1');
+    if (!c1.classList.contains('disabled')) c1.click();
   } else if (key.keyCode == '50') {
-    document.getElementById('c2').click();
+    const c2 = document.getElementById('c2');
+    if (!c2.classList.contains('disabled')) c2.click();
   } else if (key.keyCode == '51') {
-    document.getElementById('c3').click();
+    const c3 = document.getElementById('c3');
+    if (!c3.classList.contains('disabled')) c3.click();
   } else if (key.keyCode == '52') {
-    document.getElementById('c4').click();
+    const c4 = document.getElementById('c4');
+    if (!c4.classList.contains('disabled')) c4.click();
   } else if (key.keyCode == '81') {
-    document.getElementById('c5').click();
+    const c5 = document.getElementById('c5');
+    if (!c5.classList.contains('disabled')) c5.click();
   } else if (key.keyCode == '87') {
-    document.getElementById('c6').click();
+    const c6 = document.getElementById('c6');
+    if (!c6.classList.contains('disabled')) c6.click();
   } else if (key.keyCode == '69') {
-    document.getElementById('c7').click();
+    const c7 = document.getElementById('c7');
+    if (!c7.classList.contains('disabled')) c7.click();
   } else if (key.keyCode == '82') {
-    document.getElementById('c8').click();
+    const c8 = document.getElementById('c8');
+    if (!c8.classList.contains('disabled')) c8.click();
   } else if (key.keyCode == '65') {
-    document.getElementById('c9').click();
+    const c9 = document.getElementById('c9');
+    if (!c9.classList.contains('disabled')) c9.click();
   } else if (key.keyCode == '83') {
-    document.getElementById('c10').click();
+    const c10 = document.getElementById('c10');
+    if (!c10.classList.contains('disabled')) c10.click();
   } else if (key.keyCode == '68') {
-    document.getElementById('c11').click();
+    const c11 = document.getElementById('c11');
+    if (!c11.classList.contains('disabled')) c11.click();
   } else if (key.keyCode == '70') {
-    document.getElementById('c12').click();
+    const c12 = document.getElementById('c12');
+    if (!c12.classList.contains('disabled')) c12.click();
   } else if (key.keyCode == '90') {
-    document.getElementById('c13').click();
+    const c13 = document.getElementById('c13');
+    if (!c13.classList.contains('disabled')) c13.click();
   } else if (key.keyCode == '88') {
-    document.getElementById('c14').click();
+    const c14 = document.getElementById('c14');
+    if (!c14.classList.contains('disabled')) c14.click();
   } else if (key.keyCode == '67') {
-    document.getElementById('c15').click();
+    const c15 = document.getElementById('c15');
+    if (!c15.classList.contains('disabled')) c15.click();
   } else if (key.keyCode == '86') {
-    document.getElementById('c16').click();
+    const c16 = document.getElementById('c16');
+    if (!c16.classList.contains('disabled')) c16.click();
   }
 }
 
