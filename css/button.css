@@ -1,0 +1,161 @@
+/* scroll button style */
+#c1.matched {
+    cursor: default;
+    background-color: #ffaa00;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+#c11.matched {
+    cursor: default;
+    background-color: #ffaa00;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+/* hat button style  */
+#c2.matched {
+    cursor: default;
+    background-color: #a200ff;
+    background-image: linear-gradient(315deg, #a200ff 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+#c7.matched {
+    cursor: default;
+    background-color: #a200ff;
+    background-image: linear-gradient(315deg, #a200ff 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+/* dice button style */
+#c3.matched {
+    cursor: default;
+    background-color: #ff7300;
+    background-image: linear-gradient(315deg, #ff7300 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+
+#c14.matched {
+    cursor: default;
+    background-color: #ff7300;
+    background-image: linear-gradient(315deg, #ff7300 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+/* Heart button style */
+#c4.matched {
+    cursor: default;
+    background-color: #ff02c8;
+    background-image: linear-gradient(315deg, #ff02c8 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+#c13.matched {
+    cursor: default;
+    background-color: #ff02c8;
+    background-image: linear-gradient(315deg, #ff02c8 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+/* skull button style */
+#c5.matched {
+    cursor: default;
+    background-color: #30eb0b;
+    background-image: linear-gradient(315deg, #30eb0b 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+#c16.matched {
+    cursor: default;
+    background-color: #30eb0b;
+    background-image: linear-gradient(315deg, #30eb0b 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+/* ghost button style  */
+#c6.matched {
+    cursor: default;
+    background-color: #14b1d8;
+    background-image: linear-gradient(315deg, #14b1d8 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+#c12.matched {
+    cursor: default;
+    background-color: #14b1d8;
+    background-image: linear-gradient(315deg, #14b1d8 0%, #ffffff 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+/* dungeon button style */
+#c8.matched {
+    cursor: default;
+    background-color: #ffb007;
+    background-image: linear-gradient(315deg, #ffb007 0%, #3f3232 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+#c10.matched {
+    cursor: default;
+    background-color: #ffb007;
+    background-image: linear-gradient(315deg, #ffb007 0%, #3f3232 74%);
+    font-size: 15px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}

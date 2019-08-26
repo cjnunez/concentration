@@ -21,9 +21,11 @@ function shuffle(array) {
   return array;
 }
 
-document.body.onload = startGame();
+// document.body.onload = startGame();
 
 function startGame() {
+  noModal();
+  noInstructions();
   // empty the array
   openedCards = [];
 
@@ -39,6 +41,19 @@ function startGame() {
     });
     cards[i].classList.remove('show', 'open', 'matched', 'disabled');
   }
+}
+function noModal() {
+  document.getElementById('lock-background').style.display = 'block';
+
+  const me = 'no more modal!';
+  console.log(me);
+}
+function noInstructions() {
+  document.getElementById('instructions-background').style.display = 'none';
+}
+function backToMenu() {
+  document.getElementById('lock-background').style.display = 'none';
+  document.getElementById('instructions-background').style.display = 'flex';
 }
 
 function openCard() {
