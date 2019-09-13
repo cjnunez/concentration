@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-  <script defer src="https://kit.fontawesome.com/f6729a612e.js"></script>
-  <script defer src="./index.js"></script>
-  <title>Document</title>
-</head>
-<body> 
-  <h1 id="title">Memory Matching Game</h1>
-  <h5 id="subtitle">Match the cards to win the game!</h5>
-  <div class="wrapper">
-    <button id="start-button" onclick="startGame()">New Game</button>
-  </div>
-  <section id="main-board">
-    <ul class="deck" id="deck">
-      <li id="c1" class="card" type="scroll"><i class="fas fa-scroll fa-3x"></i><p>1</p></li>
-      <li id="c2" class="card" type="hat"><i class="fas fa-hat-wizard fa-3x"></i><p>2</p></li>
-      <li id="c3" class="card" type="dice"><i class="fas fa-dice-d20 fa-3x"></i><p>3</p></li>
-      <li id="c4" class="card" type="heart"><i class="fas fa-heart fa-3x"></i><p>4</p></li>
-      <li id="c5" class="card" type="skull"><i class="fas fa-skull-crossbones fa-3x"></i><p>Q</p></li>
-      <li id="c6" class="card" type="ghost"><i class="fas fa-ghost fa-3x"></i><p>W</p></li>
-      <li id="c7" class="card" type="hat"><i class="fas fa-hat-wizard fa-3x"></i><p>E</p></li>
-      <li id="c8" class="card" type="dungeon"><i class="fas fa-dungeon fa-3x"></i><p>R</p></li>
-      <li id="c9" class="card" type="dragon"><i class="fas fa-dragon fa-3x"></i><p>A</p></li>
-      <li id="c10" class="card" type="dungeon"><i class="fas fa-dungeon fa-3x"></i><p>S</p></li>
-      <li id="c11" class="card" type="scroll"><i class="fas fa-scroll fa-3x"></i><p>D</p></li>
-      <li id="c12" class="card" type="ghost"><i class="fas fa-ghost fa-3x"></i><p>F</p></li>
-      <li id="c13" class="card" type="heart"><i class="fas fa-heart fa-3x"></i><p>Z</p></li>
-      <li id="c14" class="card" type="dice"><i class="fas fa-dice-d20 fa-3x"></i><p>X</p></li>
-      <li id="c15" class="card" type="dragon"><i class="fas fa-dragon fa-3x"></i><p>C</p></li>
-      <li id="c16" class="card" type="skull"><i class="fas fa-skull-crossbones fa-3x"></i><p>V</p></li>
-    </ul>
-  </section>
-  <div class="winner-modal">
-    <div id="container">
-      <h1>🎊 Congratulations! You won! 🎊</h1>
-      <button id="close-modal" onclick="closeModal()">Close</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="https://kit.fontawesome.com/f6729a612e.js"></script>
+    <script defer src="./index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Memory Matching Game</h1>
+    <h5 id="subtitle">Match the cards to win the game!</h5>
+    <div class="wrapper">
+      <<<<<<< HEAD =======
+      <button id="start-button" onclick="startGame()">New Game</button>
     </div>
-  </div>
-  <!-- <audio id='music' src="./audio//memory-game.mp3" autoplay="true" loop="true" controls controlsList="nodownload">  -->
-</body>
+    <section id="main-board">
+      <ul class="deck" id="deck">
+        <li id="c1" class="card" type="scroll">
+          <i class="fas fa-scroll fa-3x"></i>
+          <p>1</p>
+        </li>
+        <li id="c2" class="card" type="hat">
+          <i class="fas fa-hat-wizard fa-3x"></i>
+          <p>2</p>
+        </li>
+        <li id="c3" class="card" type="dice">
+          <i class="fas fa-dice-d20 fa-3x"></i>
+          <p>3</p>
+        </li>
+        <li id="c4" class="card" type="heart">
+          <i class="fas fa-heart fa-3x"></i>
+          <p>4</p>
+        </li>
+        <li id="c5" class="card" type="skull">
+          <i class="fas fa-skull-crossbones fa-3x"></i>
+          <p>Q</p>
+        </li>
+        <li id="c6" class="card" type="ghost">
+          <i class="fas fa-ghost fa-3x"></i>
+          <p>W</p>
+        </li>
+        <li id="c7" class="card" type="hat">
+          <i class="fas fa-hat-wizard fa-3x"></i>
+          <p>E</p>
+        </li>
+        <li id="c8" class="card" type="dungeon">
+          <i class="fas fa-dungeon fa-3x"></i>
+          <p>R</p>
+        </li>
+        <li id="c9" class="card" type="dragon">
+          <i class="fas fa-dragon fa-3x"></i>
+          <p>A</p>
+        </li>
+        <li id="c10" class="card" type="dungeon">
+          <i class="fas fa-dungeon fa-3x"></i>
+          <p>S</p>
+        </li>
+        <li id="c11" class="card" type="scroll">
+          <i class="fas fa-scroll fa-3x"></i>
+          <p>D</p>
+        </li>
+        <li id="c12" class="card" type="ghost">
+          <i class="fas fa-ghost fa-3x"></i>
+          <p>F</p>
+        </li>
+        <li id="c13" class="card" type="heart">
+          <i class="fas fa-heart fa-3x"></i>
+          <p>Z</p>
+        </li>
+        <li id="c14" class="card" type="dice">
+          <i class="fas fa-dice-d20 fa-3x"></i>
+          <p>X</p>
+        </li>
+        <li id="c15" class="card" type="dragon">
+          <i class="fas fa-dragon fa-3x"></i>
+          <p>C</p>
+        </li>
+        <li id="c16" class="card" type="skull">
+          <i class="fas fa-skull-crossbones fa-3x"></i>
+          <p>V</p>
+        </li>
+      </ul>
+    </section>
+    <div class="winner-modal">
+      <div id="container">
+        <h1>🎊 Congratulations! You won! 🎊</h1>
+        <button id="close-modal" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+    <!-- <audio id='music' src="./audio//memory-game.mp3" autoplay="true" loop="true" controls controlsList="nodownload">  -->
+    >>>>>>> e7c583f25d5140de6ff2671641596d415903796e
+  </body>
 </html>

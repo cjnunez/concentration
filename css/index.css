@@ -1,3 +1,6 @@
+@import 'button.css';
+
+
 body {
   background-color: #e4eee9;
   background-image: linear-gradient(315deg, #e4eee9 0%, #93a5ce 74%);
@@ -5,11 +8,11 @@ body {
 }
 
 #title {
- text-align: center;
- color: #454545;
- font-family: 'Indie Flower', cursive;
- font-size: 40px;
- margin: 0;
+  text-align: center;
+  color: #454545;
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  margin: 0;
 }
 
 #subtitle {
@@ -26,8 +29,8 @@ body {
 }
 
 #start-button {
-  margin:auto;
-  display:block;
+  margin: auto;
+  display: block;
   background-color: #454545;
   font-size: 20px;
   color: #EEEEEE;
@@ -44,12 +47,36 @@ body {
 }
 
 #deck {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   padding: 50px;
+}
+
+#lock-background {
+  display: none;
+  height: repeat(4, 1fr);
+  width: repeat(4, 1fr);
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+#instructions-background {
+  display: flex;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(315deg, #e4eee9 0%, #93a5ce 74%);
+
+
+  /* background-color: #93a5ce; */
+
 }
 
 .card {
@@ -59,13 +86,24 @@ body {
   background-image: linear-gradient(315deg, #e4eee9 0%, #93a5ce 74%);
   list-style: none;
   border-radius: 5px;
-  box-shadow: 0 0 10px 5px rgba(95, 95, 95, 0.3);
+  box-shadow: 0 9px #999;
   cursor: pointer;
   font-size: 0;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
+}
+
+.card:hover {
+  background-color: #e4eee9;
+  background-image: linear-gradient(315deg, #93a5ce 0%, #e4eee9 74%);
+}
+
+.card:active {
+  background-image: linear-gradient(315deg, #e4eee9 0%, #93a5ce 74%);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .card p {
@@ -77,28 +115,29 @@ body {
   transform: rotateY(0);
   animation-name: flipY;
   -webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
+  backface-visibility: visible !important;
   animation-duration: .75s;
   cursor: default;
 }
 
 .card.show {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 .card.show p {
   font-size: 0px;
 }
 
+
 .card.matched {
-	cursor: default;
-	background-color: #f7b42c;
+  cursor: default;
+  background-color: #f7b42c;
   background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
-	font-size: 15px;
-	animation-name: rubberBand;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-	animation-duration: .75s;
+  font-size: 15px;
+  animation-name: rubberBand;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-duration: .75s;
 }
 
 .card.matched p {
@@ -106,17 +145,19 @@ body {
 }
 
 .card.unmatched {
-	animation-name: pulse;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-	animation-duration: .75s;
-	background: #e2043b;
+  animation-name: pulse;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-duration: .75s;
+  background: #e2043b;
 }
 
 .card.disabled {
-	pointer-events: none;
-	opacity: 0.9;
+  pointer-events: none;
+  opacity: 0.9;
 }
+
+
 
 
 /* i.fas,
@@ -135,6 +176,9 @@ audio::-webkit-media-controls-panel {
   background-color: #93a5ce;
   /* background-color: #e4eee9; */
   /* background-image: linear-gradient(315deg, #e4eee9 0%, #93a5ce 74%); */
+<<<<<<< HEAD
+}
+=======
 }
 
 .winner-modal {
@@ -169,3 +213,4 @@ audio::-webkit-media-controls-panel {
   border: none;
   border-radius: 5px;
 }
+>>>>>>> e7c583f25d5140de6ff2671641596d415903796e
